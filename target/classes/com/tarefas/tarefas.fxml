@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Scene xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="controllers.TarefasController">
+    <AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: #ffffff;">
+        <children>
+            <ImageView fitHeight="60" fitWidth="225" layoutX="20" layoutY="20">
+                <image><Image url="@imagens/SENAI_logo_2024.png" /></image>
+            </ImageView>
+
+            <Label alignment="CENTER" layoutX="0" layoutY="90" prefWidth="600" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Tarefas" />
+
+            <TableView fx:id="tabelaTarefas" layoutX="50" layoutY="130" prefHeight="220" prefWidth="500">
+                <columns>
+                    <TableColumn fx:id="colDescricao" prefWidth="200" text="Descrição" />
+                    <TableColumn fx:id="colPrazo" prefWidth="120" text="Prazo" />
+                    <TableColumn fx:id="colAcoes" prefWidth="180" text="Ações" />
+                </columns>
+            </TableView>
+
+            <Button layoutX="240.0" layoutY="360.0" onAction="#handleNovaTarefa" prefWidth="120" style="-fx-font-size: 14px;" text="Nova Tarefa" />
+        </children>
+    </AnchorPane>
+</Scene>

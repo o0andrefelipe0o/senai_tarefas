@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Scene xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CadastroUsuarioController">
+    <AnchorPane prefHeight="400" prefWidth="600" style="-fx-background-color: #ffffff;">
+        <children>
+            <ImageView fitHeight="60" fitWidth="225" layoutX="20" layoutY="20">
+                <image><Image url="@imagens/SENAI_logo_2024.png" /></image>
+            </ImageView>
+
+            <Label alignment="CENTER" layoutX="0" layoutY="90" prefWidth="600" style="-fx-font-size: 20px; -fx-font-weight: bold;" text="Cadastro" />
+
+            <Label layoutX="151.0" layoutY="140.0" style="-fx-font-size: 14px;" text="Nome:  " />
+            <TextField fx:id="txtNome" layoutX="200" layoutY="135" prefWidth="200" style="-fx-font-size: 14px;" />
+
+            <Label layoutX="156.0" layoutY="185.0" style="-fx-font-size: 14px;" text="Email:  " />
+            <TextField fx:id="txtEmail" layoutX="200" layoutY="180" prefWidth="200" style="-fx-font-size: 14px;" />
+
+            <Label layoutX="152.0" layoutY="230.0" style="-fx-font-size: 14px;" text="Senha:  " />
+            <PasswordField fx:id="txtSenha" layoutX="200" layoutY="225" prefWidth="200" style="-fx-font-size: 14px;" />
+
+            <Button layoutX="240.0" layoutY="265.0" onAction="#handleCadastrar" prefWidth="120" style="-fx-font-size: 14px;" text="Cadastrar" />
+            <Button layoutX="240.0" layoutY="305.0" onAction="#handleVoltarLogin" prefWidth="120" style="-fx-font-size: 14px;" text="Voltar" />
+        </children>
+    </AnchorPane>
+</Scene>
